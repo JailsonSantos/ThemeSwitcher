@@ -7,6 +7,8 @@ import dark from './styles/themes/dark';
 
 import GlobalStyle from './styles/global';
 import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 const App = () => {
   const [theme, setTheme] = usePersitedState<DefaultTheme>('theme', light);
@@ -20,6 +22,8 @@ const App = () => {
       <div className="App">
         <GlobalStyle />
         <Header toogleTheme={toogleTheme} />
+        <Main />
+        <Footer />
       </div>
     </ThemeProvider>
   );

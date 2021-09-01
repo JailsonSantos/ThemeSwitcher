@@ -15,19 +15,26 @@ const Header: React.FC<Props> = ({ toogleTheme }) => {
 
   return (
     <Container>
-      Hello Word!!
+      <nav>
+        <ul>
+          <li>Início</li>
+          <li>Sobre</li>
+          <li>Contatos</li>
+        </ul>
 
-      <Switch
-        onChange={toogleTheme}
-        checked={title === 'dark'}
-        checkedIcon={false}
-        uncheckedIcon={false}
-        height={10}
-        width={40}
-        handleDiameter={20}
-        offColor={shade(0.15, colors.primary)}
-        onColor={colors.secundary}
-      />
+        <Switch
+          onChange={toogleTheme}
+          checked={title === 'dark'}
+          checkedIcon={false}
+          uncheckedIcon={false}
+          height={10}
+          width={40}
+          handleDiameter={20}
+          offColor={shade(0.15, colors.primary)}
+          onColor={shade(0.15, colors.secundary)}
+        />
+      </nav>
+
     </Container>
   );
 }

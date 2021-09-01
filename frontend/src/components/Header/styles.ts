@@ -1,13 +1,30 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 60px;
+    height: 10vh;
     background: ${props => props.theme.colors.primary};
     color: #fff;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 0 30px;
 
+    nav{
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      ul{
+        list-style: none;
+        display: flex;
+      }
+
+      li{
+        margin-right: 15px;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
 `;
 
